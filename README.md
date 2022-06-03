@@ -7,6 +7,8 @@ Requires Terraria and dnSpy (free)
 
 Instructions:
 
+Make a backup of Terraria.exe unless you really really don't feel like it.
+
 To obtain "Terraria.Libraries.ReLogic.ReLogic.dll", navigate to Terraria.exe in dnSpy, there should be a "Resources" folder near "PE", "References", "{ } -", "{ } Extensions", etc. Open up "Resources", there should be a list of json and dll files here. Click "Terraria.Libraries.ReLogic.ReLogic.dll" and now there should be a "save" button in the contents window. It's a bit weird but that's all there is to it. Save the dll next to Terraria.exe on your drive and now drag "Terraria.Libraries.ReLogic.ReLogic.dll" from file explorer into your dnSpy window.
 
 1. Open Terraria.exe using dnSpy. Also open "Terraria.Libraries.ReLogic.ReLogic.dll" in the same dnSpy window (necessary to be able to recompile C# code and avoid needing assembly edits)
