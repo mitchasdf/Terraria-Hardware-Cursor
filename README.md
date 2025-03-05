@@ -12,7 +12,7 @@ Make a backup of Terraria.exe unless you really really don't feel like it.
 To obtain the ReLogic and NewtonSoft DLLs, navigate to Terraria.exe in dnSpy, there should be a "Resources" folder near "PE", "References", "{ } -", "{ } Extensions", etc. Open up "Resources", there should be a list of json and dll files here. Click "Terraria.Libraries.ReLogic.ReLogic.dll" & "Terraria.Libraries.JSON.NET.Newtonsoft.Json.dll" and now there should be a "save" button in the contents window. Save the DLLs next to Terraria.exe on your drive and now drag both DLLs from file explorer into your dnSpy window.
 
 1. Open Terraria.exe using dnSpy. Also make sure the ReLogic and NewtonSoft DLLs are open in the same dnSpy window (necessary to be able to recompile C# code and avoid needing assembly edits)
-2. Edit(on the menu bar) -> Merge with Assembly... -> Choose "Terraria hardware cursor.dll" (shipped with this repo). Now there should be a HardwareCursor class within the Terraria namespace.
+2. Right-click Terraria's assembly -> Merge with Assembly... -> Choose "Terraria hardware cursor.dll" (shipped with this repo). Now there should be a HardwareCursor class within the Terraria namespace.
 3. Ctrl+Shift+S to save assembly (this step is required here in order to reference members of the merged DLL in the next steps)
 4. Still within dnSpy, navigate to Terraria.Main.Initialize_AlmostEverything()
 5. Right-click inside the function body and "Edit Method (C#)...", scroll to the bottom
